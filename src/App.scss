@@ -1,0 +1,76 @@
+$fontFamily: 'Roboto',
+sans-serif;
+
+@import 'react-credit-cards/lib/styles.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #f4f6f8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: $fontFamily, sans-serif;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#root {
+  height: 100%;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.rsis-container {
+  cursor: pointer;
+}
+
+
+
+// start autocomplete
+.content-autocomplete {
+  margin-top: 16px;
+
+  &__input {
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    padding: 18.5px 14px;
+    color: currentColor;
+    height: 3.32em;
+    font-size: 16px;
+    width: 100%;
+    background: transparent;
+    font-family: $fontFamily;
+
+    &::-webkit-input-placeholder,
+    &:-ms-input-placeholder,
+    &::placeholder {
+      font-family: $fontFamily;
+      color: #263238;
+    }
+
+    &:focus {
+      outline: #de1738 auto 0;
+      border-color: #de1738;
+      border-width: 2px;
+    }
+  }
+}
+
+// end autocomplete
